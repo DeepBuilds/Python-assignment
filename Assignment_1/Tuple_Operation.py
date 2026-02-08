@@ -24,3 +24,5 @@ tuple1 = (100, 200, 300)
 tuple2 = (400, 500, 600)
 concatenated_tuple = tuple1 + tuple2  # Concatenating tuples
 print("Concatenated Tuple:", concatenated_tuple)
+
+5
