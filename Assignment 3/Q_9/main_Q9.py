@@ -15,3 +15,5 @@ elif choice == "triangle":
     b = float(input("Enter base: "))
     h = float(input("Enter height: "))
     print("Area:", shapes.triangle_area(b, h))
+else:
+    print("Enter a valid input!")

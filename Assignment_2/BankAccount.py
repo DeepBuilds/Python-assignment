@@ -1,18 +1,11 @@
 class BankAccount:
     def __init__(self, account_number, initial_balance=0):
-        """
-        Initialize the bank account with an account number and an optional initial balance.
-        :param account_number: str
-        :param initial_balance: float
-        """
+        
         self.account_number = account_number
         self.balance = initial_balance
 
     def deposit(self, amount):
-        """
-        Deposit money into the account.
-        :param amount: float
-        """
+        
         if amount > 0:
             self.balance += amount
             print(f"Deposited {amount:.2f}. New balance: {self.balance:.2f}")
@@ -20,10 +13,7 @@ class BankAccount:
             print("Deposit amount must be positive.")
 
     def withdraw(self, amount):
-        """
-        Withdraw money from the account.
-        :param amount: float
-        """
+
         if amount > 0:
             if amount <= self.balance:
                 self.balance -= amount
@@ -34,9 +24,7 @@ class BankAccount:
             print("Withdrawal amount must be positive.")
 
     def check_balance(self):
-        """
-        Check and return the current balance of the account.
-        """
+
         print(f"Current balance: {self.balance:.2f}")
         return self.balance
 
