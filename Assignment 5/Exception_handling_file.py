@@ -8,7 +8,7 @@ def read_file():
             print(content)
 
     except FileNotFoundError:
-        print("Error: The file does not exist. Please check the filename.")
+        print("Error: The file does not exist. Please che ck the filename.")
 
     except PermissionError:
         print("Error: Permission denied. You do not have access to read this file.")
@@ -17,5 +17,4 @@ def read_file():
         print(f"Unexpected error occurred: {e}")
 
 
-# Run the function
 read_file()
