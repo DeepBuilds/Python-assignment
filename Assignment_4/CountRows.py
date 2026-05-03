@@ -3,7 +3,7 @@ import csv
 
 def count_rows_in_csv(file_name):
     try:
-        with open(file_name, mode='r', newline='') as file:
+        with open(file_name, 'r', newline='') as file:
             reader = csv.reader(file)
             row_count = sum(1 for row in reader)  
         return row_count
